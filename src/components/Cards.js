@@ -165,7 +165,7 @@ function Modal(props) {
 
 		await axios
 			.post(
-				`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/upload`,
+				`http://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/upload`,
 				fileForm
 			)
 			.then((res) => {
@@ -185,7 +185,7 @@ function Modal(props) {
 		if (id === 'detectLabels') {
 			await axios
 				.post(
-					`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/labels`,
+					`http://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/labels`,
 					{ name: imageName }
 				)
 				.then((res) => {
@@ -211,7 +211,7 @@ function Modal(props) {
 		} else if (id === 'detectTexts') {
 			await axios
 				.post(
-					`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/texts`,
+					`http://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/texts`,
 					{ name: imageName }
 				)
 				.then((res) => {
@@ -261,7 +261,7 @@ function Modal(props) {
 		} else if (id === 'detectFaces') {
 			await axios
 				.post(
-					`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/faces`,
+					`http://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/faces`,
 					{ name: imageName }
 				)
 				.then((res) => {
@@ -355,7 +355,7 @@ function Modal(props) {
 		} else if (id === 'detectCelebrities') {
 			await axios
 				.post(
-					`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/celeb`,
+					`http://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/celeb`,
 					{ name: imageName }
 				)
 				.then((res) => {
@@ -604,7 +604,7 @@ function CompareModal(props) {
 
 		await axios
 			.post(
-				`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/upload`,
+				`http://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/upload`,
 				fileForm
 			)
 			.then((res) => {
@@ -631,7 +631,7 @@ function CompareModal(props) {
 	const compareHandler = async () => {
 		axios
 			.post(
-				`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/compare`,
+				`http://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/compare`,
 				{
 					name: sourceImageName,
 					img: targetImageName,
