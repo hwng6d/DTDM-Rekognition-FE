@@ -79,7 +79,6 @@ function Modal(props) {
 				cliInfo
 			)
 			.then((res) => {
-				s;
 				console.log('sent cli!');
 			})
 			.catch((err) => {
