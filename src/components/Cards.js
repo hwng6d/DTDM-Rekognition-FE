@@ -712,7 +712,7 @@ function CompareModal(props) {
 											marginRight: '32px',
 										}}>
 										<h3 className='modal-body-content-req-header'>
-											Chọn 1 bức hình đích
+											Chọn 1 bức hình nguồn
 										</h3>
 										{/* upload_bootstrap && save-to-s3_bootstrap */}
 										<div className='modal-body-content-req-upload'>
@@ -777,7 +777,7 @@ function CompareModal(props) {
 										className='modal-body-content-req-2'
 										style={{ display: 'inline-block' }}>
 										<h3 className='modal-body-content-req-header'>
-											Chọn 1 bức hình nguồn
+											Chọn 1 bức hình đích
 										</h3>
 										{/* upload_bootstrap && save-to-s3_bootstrap */}
 										<div className='modal-body-content-req-upload'>
