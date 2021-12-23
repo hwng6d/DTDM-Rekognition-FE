@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+.Header {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	border-top: 12px solid black;
+	padding: 15px;
+	border-image: linear-gradient(to right, rgb(255, 74, 74), rgb(255, 155, 61))
+		1 stretch;
+	box-shadow: 10px 1px 3px rgb(168, 168, 168);
+	align-items: center;
+	background-color: white;
+}
+
+.School-display,
+.Course-display {
+	display: inline-block;
+}
+
+.School-display {
+	font-size: 30px;
+	display: inline-block;
+}
+
+.Course-display {
+	font-size: 22px;
+	display: inline-block;
+	margin-right: 32px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.Project-display {
+	font-size: 30px;
+	display: inline-block;
+	align-items: center;
+	display: flex;
+	margin-top: 6px;
+}

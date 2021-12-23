@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	background-color: #f8f8f8;
+}
+
+.floatingbar {
+	display: flex;
+	position: fixed;
+	bottom: 2rem;
+	right: 0px;
+	left: 0px;
+	padding: 0px 8px;
+	position: fixed;
+	margin: auto;
+	width: 25%;
+	justify-content: center;
+	gap: 1rem;
+	align-items: center;
+	border: 3px solid rgb(151, 151, 151);
+	background-color: rgb(255, 219, 219);
+	border-radius: 10px;
+
+	&-iconframe {
+		box-sizing: content-box;
+		padding: 8px;
+		display: inline-block;
+		margin: 8px;
+		border: none;
+		border-radius: 8px;
+		background-color: rgb(255, 72, 72);
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&-content {
+		display: inline-block;
+		padding: 16px 8px;
+	}
+}
+
+.cli-modal {
+	display: flex;
+
+	&-description {
+		margin-top: 16px;
+	}
+
+	&-body {
+		display: block;
+		margin-top: 12px;
+
+		&-accesskeyid {
+			display: block;
+		}
+
+		&-secretaccesskey {
+			display: block;
+		}
+
+		&-sessiontoken {
+			display: block;
+		}
+	}
+
+	&-footer {
+		display: flex;
+		margin-top: 36px;
+
+		&-acceptbutton {
+			display: block;
+			cursor: pointer;
+			color: rgb(0, 189, 31);
+			background-color: white;
+			font-size: 1rem;
+			border: none;
+			margin-left: 24px;
+
+			&:hover {
+				transition: all 0.2s ease;
+				font-weight: 700;
+			}
+		}
+
+		&-closebutton {
+			display: block;
+			cursor: pointer;
+			color: rgb(255, 0, 0);
+			background-color: white;
+			font-size: 1rem;
+			border: none;
+			margin-left: auto;
+
+			&:hover {
+				transition: all 0.2s ease;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+input[type='text'] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
