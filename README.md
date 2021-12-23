@@ -52,3 +52,5 @@
 <p>Chọn hình (có thể chọn 2 hình nếu chọn chức năng So sánh gương mặt)</p>
 <p>Nhấn nút Upload to S3 để hệ thống upload hình vừa chọn lên Amazon S3</p>
 <p>Nhấn nút chức năng (Phát hiện.../ So sánh...)</p>
+<h4>Credits...</h4>
+<p>github: https://github.com/sheep0317/CloudComputing/tree/main/public</p>
