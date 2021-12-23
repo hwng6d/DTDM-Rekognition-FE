@@ -76,7 +76,7 @@ function Modal(props) {
 		await axios
 			.post(
 				//'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/setCLI',
-				`http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/setCLI`,
+				`https://ec2-52-91-18-17.compute-1.amazonaws.com:5000/api/setCLI`,
 				cliInfo
 			)
 			.then((res) => {
