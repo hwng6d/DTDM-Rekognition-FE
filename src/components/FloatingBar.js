@@ -74,8 +74,12 @@ function Modal(props) {
 		console.log('cliInfo: ', cliInfo);
 
 		await axios
-			.post('http://localhost:5000/api/setCLI', cliInfo)
+			.post(
+				'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/setCLI',
+				cliInfo
+			)
 			.then((res) => {
+				s;
 				console.log('sent cli!');
 			})
 			.catch((err) => {
