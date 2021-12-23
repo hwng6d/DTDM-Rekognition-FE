@@ -42,3 +42,9 @@
     </tr>
   </tbody>
 </table>
+<h4>Steps...</h4>
+<p>Truy cập vào trang {URL} với {PORT}</p>
+<p>Chọn chức năng</p>
+<p>Chọn hình (có thể chọn 2 hình nếu chọn chức năng So sánh gương mặt)</p>
+<p>Nhấn nút Upload to S3 để hệ thống upload hình vừa chọn lên Amazon S3</p>
+<p>Nhấn nút chức năng (Phát hiện.../ So sánh...)</p>
