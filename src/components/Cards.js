@@ -154,7 +154,7 @@ function Modal(props) {
 		setIsS3Uploaded(false);
 	};
 
-	const onFileUpload = async (e) => {
+	const onFileUpload = async () => {
 		if (!image) {
 			console.log('Chưa có hình ảnh');
 			return;
