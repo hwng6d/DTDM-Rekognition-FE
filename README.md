@@ -1,7 +1,7 @@
 # DTDM-Rekognition-FE
 
 <h2>FRONTEND PROJECT AMAZON REKOGNITION:</h2>
-<h3>HDSD</h3>
+<h3>HƯỚNG DẪN SỬ DỤNG</h3>
 <h4>Samples...</h4>
 <p>{PORT}: 5000</p>
 <p>{URL}: http://ec2-3-82-207-155.compute-1.amazonaws.com (có thể thay đổi do restart AWS CLI)</p>
