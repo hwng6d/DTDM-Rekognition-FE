@@ -53,4 +53,6 @@
 <p>Nhấn nút Upload to S3 để hệ thống upload hình vừa chọn lên Amazon S3</p>
 <p>Nhấn nút chức năng (Phát hiện.../ So sánh...)</p>
 <h4>Credits...</h4>
-<p>github: https://github.com/sheep0317/CloudComputing/tree/main/public</p>
+<p>1. Vẽ boundary cho mặt/ vật thể: github: https://github.com/sheep0317/CloudComputing/tree/main/public</p>
+<p>2. Cách gắn API: https://console.aws.amazon.com/rekognition/home?region=us-east-1#/</p>
+<p>3. Reactjs: Codevolution Reactjs Course</p>
