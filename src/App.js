@@ -10,7 +10,7 @@ function App() {
 			<Header />
 			<Title />
 			<Cards />
-			<FloatingBar />
+			{/* <FloatingBar /> */}
 		</div>
 	);
 }
