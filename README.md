@@ -10,9 +10,6 @@
 <p>{PORT}: 8000</p>
 <p>{URL}: http://ec2-3-82-207-155.compute-1.amazonaws.com (có thể thay đổi do restart AWS CLI)</p>
 <p>scripts: npm start</p>
-<h4>Lấy AWS CLI...</h4>
-<p>Truy cập: https://awsacademy.instructure.com/courses/5744/modules/items/624071</p>
-<p>Nhấn Start Lab</p>
 <h4>API Routes...</h4>
 <table>
   <thead>
