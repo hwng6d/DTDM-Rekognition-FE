@@ -9,6 +9,7 @@
 <h4>Samples...</h4>
 <p>{PORT}: 8000</p>
 <p>{URL}: http://ec2-3-82-207-155.compute-1.amazonaws.com (có thể thay đổi do restart AWS CLI)</p>
+<p>scripts: npm start</p>
 <h4>API Routes...</h4>
 <table>
   <thead>
