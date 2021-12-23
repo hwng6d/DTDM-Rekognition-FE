@@ -164,10 +164,7 @@ function Modal(props) {
 		fileForm.append('image', image);
 
 		await axios
-			.post(
-				'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/upload',
-				fileForm
-			)
+			.post(`${process.env.URL}:5000/api/upload`, fileForm)
 			.then((res) => {
 				console.log('success');
 				console.log('res.data.image: ', res.data.image);
@@ -184,10 +181,7 @@ function Modal(props) {
 	const detectHandler = async () => {
 		if (id === 'detectLabels') {
 			await axios
-				.post(
-					'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/labels',
-					{ name: imageName }
-				)
+				.post(`${process.env.URL}:5000/api/labels`, { name: imageName })
 				.then((res) => {
 					console.log(res.data.data.Labels);
 
@@ -210,10 +204,7 @@ function Modal(props) {
 				});
 		} else if (id === 'detectTexts') {
 			await axios
-				.post(
-					'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/texts',
-					{ name: imageName }
-				)
+				.post(`${process.env.URL}:5000/api/texts`, { name: imageName })
 				.then((res) => {
 					//draw boudiry for image
 					{
@@ -260,10 +251,7 @@ function Modal(props) {
 				});
 		} else if (id === 'detectFaces') {
 			await axios
-				.post(
-					'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/faces',
-					{ name: imageName }
-				)
+				.post(`${process.env.URL}:5000/api/faces`, { name: imageName })
 				.then((res) => {
 					console.log(res.data.data.FaceDetails);
 
@@ -354,10 +342,7 @@ function Modal(props) {
 				});
 		} else if (id === 'detectCelebrities') {
 			await axios
-				.post(
-					'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/celeb',
-					{ name: imageName }
-				)
+				.post(`${process.env.URL}:5000/api/celeb`, { name: imageName })
 				.then((res) => {
 					//draw boudiry for image
 					{
@@ -603,10 +588,7 @@ function CompareModal(props) {
 		fileForm.append('image', img);
 
 		await axios
-			.post(
-				'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/upload',
-				fileForm
-			)
+			.post(`${process.env.URL}:5000/api/upload`, fileForm)
 			.then((res) => {
 				console.log('success');
 				console.log('res.data.image: ', res.data.image);
@@ -630,13 +612,10 @@ function CompareModal(props) {
 
 	const compareHandler = async () => {
 		axios
-			.post(
-				'http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/compare',
-				{
-					name: sourceImageName,
-					img: targetImageName,
-				}
-			)
+			.post(`${process.env.URL}:5000/api/compare`, {
+				name: sourceImageName,
+				img: targetImageName,
+			})
 			.then((res) => {
 				//draw boudiry for target
 				{

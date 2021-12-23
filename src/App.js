@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config({ path: '../config.env' });
 import Header from '../src/components/Header';
 import Title from '../src/components/Title';
 import Cards from '../src/components/Cards';
