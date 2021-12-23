@@ -165,7 +165,7 @@ function Modal(props) {
 
 		await axios
 			.post(
-				`http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/upload`,
+				`ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/upload`,
 				fileForm
 			)
 			.then((res) => {
@@ -185,7 +185,7 @@ function Modal(props) {
 		if (id === 'detectLabels') {
 			await axios
 				.post(
-					`http://ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/labels`,
+					`ec2-3-82-207-155.compute-1.amazonaws.com:5000/api/labels`,
 					{ name: imageName }
 				)
 				.then((res) => {
